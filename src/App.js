@@ -34,8 +34,11 @@ class App extends Component {
           <h1 className="App-title">ReactND - Coding Practice</h1>
         </header>
         <div className="container">
-          <ChatWindow user={users[0]} updateChat={this.updateChat} messages={this.state.messages} />
-          <ChatWindow user={users[1]} updateChat={this.updateChat} messages={this.state.messages} />
+          {
+            users.map(user => (
+              <ChatWindow user={user} updateChat={this.updateChat} messages={this.state.messages} />
+            ))
+          }
         </div>
       </div>
     );
