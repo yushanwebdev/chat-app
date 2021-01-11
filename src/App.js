@@ -36,7 +36,7 @@ class App extends Component {
         <div className="container">
           {
             users.map(user => (
-              <ChatWindow user={user} updateChat={this.updateChat} messages={this.state.messages} />
+              <ChatWindow key={user.username} user={user} updateChat={this.updateChat} messages={this.state.messages} />
             ))
           }
         </div>
