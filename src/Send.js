@@ -1,4 +1,5 @@
 import { Component } from "react";
+import PropTypes from "prop-types";
 
 class Send extends Component {
   state = {
@@ -43,6 +44,11 @@ class Send extends Component {
       </div>
     )
   }
+}
+
+Send.propTypes = {
+  updateChat: PropTypes.func.isRequired,
+  username: PropTypes.string.isRequired
 }
 
 export default Send;

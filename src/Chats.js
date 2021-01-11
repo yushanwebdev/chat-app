@@ -1,3 +1,5 @@
+import PropTypes from "prop-types";
+
 const Chats = props => (
     <ul className="message-list">
         {props.messages.map((message, index) => (
@@ -12,5 +14,10 @@ const Chats = props => (
         ))}
     </ul>
 );
+
+Chats.propTypes = {
+    messages: PropTypes.array.isRequired,
+    username: PropTypes.string.isRequired
+}
 
 export default Chats;
