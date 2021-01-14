@@ -1,12 +1,17 @@
-import { Fragment } from "react";
+import { Fragment, PureComponent } from "react";
 import PropTypes from "prop-types";
 
-const Title = props => (
-    <Fragment>
-        <h2>Super Awesome Chat</h2>
-        <div className="name sender">{props.title}</div>
-    </Fragment>
-);
+class Title extends PureComponent {
+    render() {
+        console.log("Title rendered.");
+        return(
+            <Fragment>
+                <h2>Super Awesome Chat</h2>
+                <div className="name sender">{this.props.title}</div>
+            </Fragment> 
+        )
+    }
+}
 
 Title.propTypes = {
     title: PropTypes.string.isRequired
