@@ -10,7 +10,7 @@ This exercise will help you practice many of your newly aquired React skills.
 The instructions are included in the `instructions.md` file.
 */
 
-const users = [{ username: 'Amy' }, { username: 'John' }];
+const users = [{ username: 'Me' }, { username: 'Me' }];
 
 class App extends Component {
   state = {
