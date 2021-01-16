@@ -4,13 +4,7 @@ import '../node_modules/bootstrap/dist/css/bootstrap.css';
 import './App.css';
 import ChatWindow from './ChatWindow';
 
-/*
-This exercise will help you practice many of your newly aquired React skills.
-
-The instructions are included in the `instructions.md` file.
-*/
-
-const users = [{ username: 'Me' }, { username: 'Me' }];
+const users = [{ username: 'Me' }, { username: 'Myself' }];
 
 class App extends Component {
   state = {
