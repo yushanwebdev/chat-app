@@ -3,7 +3,6 @@ import PropTypes from "prop-types";
 
 class Title extends PureComponent {
     render() {
-        console.log("Title rendered.");
         return(
             <Fragment>
                 <h2>Super Awesome Chat</h2>
