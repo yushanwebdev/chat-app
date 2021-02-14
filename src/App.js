@@ -4,7 +4,7 @@ import '../node_modules/bootstrap/dist/css/bootstrap.css';
 import './App.css';
 import ChatWindow from './ChatWindow';
 
-const users = [{ username: 'Me' }, { username: 'Myself' }];
+const users = [{ username: 'Rock' }, { username: 'Hart' }];
 
 class App extends Component {
   state = {
